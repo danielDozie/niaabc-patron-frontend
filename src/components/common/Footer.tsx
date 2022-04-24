@@ -5,7 +5,7 @@ export const Footer = () => {
     <div className='w-full h-52'>
       <div className="flex px-8 md:px-16 py-16 justify-between">
          <div>
-           <h1 className="font-medium uppercase font-Roboto text-2xl text-white">Patron<span className="text-pink-500 underline underline-offset-4">.</span></h1>
+           <h1 className="font-medium uppercase font-Roboto text-2xl text-white">Patron<span className="text-pink-900 underline underline-offset-4">.</span></h1>
          </div>
          <div>
          <div className="flex flex-col gap-y-2">
