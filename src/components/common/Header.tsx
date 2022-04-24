@@ -7,7 +7,7 @@ export const Header = () => {
   
   const homeLink = (e: { preventDefault: () => void }) => {
     e.preventDefault()
-    var b = confirm('You will be taken to the NIAABC main website?')
+    var b = confirm('You will be taken to the NIAABC main website!')
     if (b) {
       window.location.href = 'https://niaabujachapter.com'
     }
