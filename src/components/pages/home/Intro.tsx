@@ -1,6 +1,6 @@
 import recognised from './recognised.svg'
-import { useQuery } from 'react-query'
-import axios from 'axios'
+// import { useQuery } from 'react-query'
+// import axios from 'axios'
 
 export const Intro = () => {
     // const { isLoading, error, data } = useQuery('users', () => {
