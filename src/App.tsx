@@ -7,12 +7,12 @@ function App() {
   
   return (
     <>
-    {/* <Architects /> */}
+    <Architects />
 
 
-    <Hero />
+    {/* <Hero />
     <Intro />
-    <Find />
+    <Find /> */}
     </>
   )
 }
