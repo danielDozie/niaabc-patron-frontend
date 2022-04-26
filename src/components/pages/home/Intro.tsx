@@ -3,13 +3,13 @@ import { useQuery } from 'react-query'
 import axios from 'axios'
 
 export const Intro = () => {
-    const { isLoading, error, data } = useQuery('users', () => {
-        return axios.get(import.meta.env.VITE_USER_API).then(response => response.data)
-    })
-    if (isLoading) return <div>Loading...</div>
-    if (error) return <div>Error: </div>
-    if (!data) return <div>No data</div>
-    console.log(data)
+    // const { isLoading, error, data } = useQuery('users', () => {
+    //     return axios.get(import.meta.env.VITE_USER_API).then(response => response.data)
+    // })
+    // if (isLoading) return <div>Loading...</div>
+    // if (error) return <div>Error: </div>
+    // if (!data) return <div>No data</div>
+    // console.log(data)
     return (
         <div className="w-full mx-auto mt-16 h-full pb-16">
             <div className="px-8 md:px-16">
