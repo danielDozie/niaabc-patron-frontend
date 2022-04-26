@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <div className='w-full h-52'>
+    <div className='w-full h-52 bg-black z-30 relative'>
       <div className="flex px-8 md:px-16 py-16 justify-between">
          <div>
            <h1 className="font-medium uppercase font-Roboto text-2xl text-white">Patron<span className="text-pink-900 underline underline-offset-4">.</span></h1>

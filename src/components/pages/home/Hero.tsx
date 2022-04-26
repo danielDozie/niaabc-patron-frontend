@@ -1,5 +1,4 @@
 import { IoMdCheckmarkCircleOutline } from 'react-icons/io'
-import Logo from './../../common/Logo.svg'
 
 export const Hero = () => {
   return (
@@ -7,7 +6,7 @@ export const Hero = () => {
     <div className="bg-black/80 w-full h-full pb-16 pt-20">
     <div className="px-8">
         <div className="mx-auto font-Roboto text-center mt-20">
-          <img src={Logo} className='h-24 mx-auto' alt='logo' />
+          <img src={`../assets/image/Logo.svg`} className='h-24 mx-auto' alt='logo' />
           <div>
           <h1 className="text-white bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-red-900 font-bold text-7xl  md:text-9xl">NIAABC PATRON</h1>
           </div>
