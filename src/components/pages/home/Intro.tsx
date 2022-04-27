@@ -11,7 +11,7 @@ export const Intro = () => {
     // if (!data) return <div>No data</div>
     // console.log(data)
     return (
-        <div className="w-full mx-auto mt-16 h-full pb-16">
+        <div className="w-full h-full pb-16 mx-auto mt-16 bg-white || dark:bg-black">
             <div className="px-8 md:px-16">
 
                 <div className="flex flex-col md:flex-row mt-4 gap-x-8">

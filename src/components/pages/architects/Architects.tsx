@@ -5,7 +5,7 @@ import { MemberCard } from './MemberCard'
 export const Architects = () => {
   return (
     <div className="pb-16 pt-20 || dark:bg-black">
-      {/* <div className="w-ful h-12 bg-gray-900 static text-sm">
+      {/* <div className="w-full h-12 bg-gray-900 static text-sm">
             <div className="flex justify-center mx-auto gap-x-4">
                 <input type="text" className="w-[40%]  mt-2 border border-gray-200 p-2 capitalize text-xs font- bg-transparent rounded-sm text-white " placeholder="Search architects using either fullname, phone number or architect&apos;s DMN"/>
                 <button className="text-gray-100 font-medium py-2 px-4 text-sm mt-2 hover:text-pink-700">Search</button>

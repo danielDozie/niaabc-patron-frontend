@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <div className='w-full  bg-gradient-to-t from-gray-200 to-white bg-white z-30 relative || dark:bg-black'>
+    <div className='w-full  bg-gradient-to-t from-gray-200 to-white bg-white z-30 relative || dark:bg-gradient-to-t dark:from-black dark:to-black'>
       <div className="flex px-8 md:px-16 pt-16 justify-between">
          <div className="mt-3 md:mt-0">
            <h1 className="font-medium uppercase font-Roboto text-2xl text-black || dark:text-white">Patron<span className="text-pink-900 underline underline-offset-4">.</span></h1>
