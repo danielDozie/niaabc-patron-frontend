@@ -1,8 +1,21 @@
 import React from 'react'
 import { BiSearchAlt } from 'react-icons/bi'
 import { MemberCard } from './MemberCard'
+import { useQuery } from 'react-query'
+import axios from 'axios'
+import _ from 'lodash'
+
 
 export const Architects = () => {
+  const { isLoading, error, data } = useQuery('users', () => {
+    return axios.get(import.meta.env.VITE_USER_API).then(response => response.data)
+})
+if (isLoading) return <div>Loading...</div>
+if (error) return <div>Error: </div>
+if (!data) return <div>No data</div>
+const countMembers = _.size(data)
+const members:any = _.slice(data, 0, 16)
+console.log(members[0])
   return (
     <div className="pb-16 pt-20 || dark:bg-black">
       {/* <div className="w-full h-12 bg-gray-900 static text-sm">
@@ -16,14 +29,14 @@ export const Architects = () => {
           <div className="fixed mt-4 w-1/4 text-left">
             <h1 className="text-sm text-black uppercase font-bold || dark:text-white">Find Architects</h1>
             <p className="w-4/5 text-xs py-2 text-black font-light || dark:text-white">Search architects using either full name, phone number or architect&apos;s DMN.</p>
-            <input type="text" className="w-4/5 mt-4 border border-gray-200 p-2 capitalize text-xs font- bg-transparent rounded-sm text-black || dark:text-white" placeholder="Enter search keyword" />
+            <input type="text" className="w-4/5 mt-4 border border-gray-200 p-2 capitalize text-xs font- bg-transparent rounded-sm text-black || dark:text-white" placeholder={`Enter search term (Members Count: ${countMembers})`} />
             <div className="pt-2">
               <button className="flex text-center justify-center gap-x-1 bg-gradient-to-r from-pink-500 to-red-900 text-gray-100 py-1 text-sm font-normal mt-2 rounded-sm w-1/2 cursor-pointer || hover:bg-gradient-to-l hover:from-pink-900 hover:to-red-900"><p className="mt-1">SEARCH</p> <BiSearchAlt size="25" className="pt-1" /> 
               </button>
             </div>
             
             <div className="mt-12">
-              <h1 className="text-sm text-black uppercase font-bold mb-2 || dark:text-white">News & Updates</h1>
+              <h1 className="text-sm text-black uppercase font-bold mb-2 || dark:text-white">News & Events</h1>
               <div className="flex flex-col">
                 <div className="flex h-20 w-5/6 ">
                    <div className="w-[30%] pt-2">
@@ -73,23 +86,7 @@ export const Architects = () => {
         <div className="h-full w-full md:w-3/4 md:float-right md:justify-end">
             {/* //grid with 4 rows */}
             <div className="grid grid-cols-2 grid-rows-6 md:grid-flow-col md:grid-cols-4 md:grid-rows-4 gap-4  md:gap-4 md:p-2 mx-auto">
-                <MemberCard />
-                <MemberCard />
-                <MemberCard />
-                <MemberCard />
-                <MemberCard />
-                <MemberCard />
-                <MemberCard />
-                <MemberCard />
-                <MemberCard />
-                <MemberCard />
-                <MemberCard />
-                <MemberCard />
-                <MemberCard />
-                <MemberCard />
-                <MemberCard />
-                <MemberCard />
-
+                <MemberCard members={members} />
             </div>
             <div className="py-8 mx-auto justify-center text-center w-48">
                   <button className="bg-gray-900 text-gray-100  font-normal py-2 px-4 text-sm mt-2 bg-gradient-to-r from-pink-900 to-red-900 rounded-sm || hover:bg-gradient-to-l hover:from-pink-900 hover:to-red-900">Load more</button>

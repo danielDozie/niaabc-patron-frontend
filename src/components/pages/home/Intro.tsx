@@ -1,15 +1,6 @@
-import recognised from './recognised.svg'
-// import { useQuery } from 'react-query'
-// import axios from 'axios'
+import React from 'react';
 
 export const Intro = () => {
-    // const { isLoading, error, data } = useQuery('users', () => {
-    //     return axios.get(import.meta.env.VITE_USER_API).then(response => response.data)
-    // })
-    // if (isLoading) return <div>Loading...</div>
-    // if (error) return <div>Error: </div>
-    // if (!data) return <div>No data</div>
-    // console.log(data)
     return (
         <div className="w-full h-full pb-16 mx-auto mt-16 bg-white || dark:bg-black">
             <div className="px-8 md:px-16">
@@ -42,7 +33,7 @@ export const Intro = () => {
                         </div>
                     </div>
                     <div className="w-full md:w-2/5 mt-12 md:mt-0">
-                        <img src={recognised} alt="Niaabc" />
+                        <img src="../assets/image/recognised.svg" alt="Niaabc" />
                     </div>
                 </div>
             </div>

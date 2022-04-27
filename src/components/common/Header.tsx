@@ -13,7 +13,7 @@ export const Header = () => {
   }
 
   return (
-    <div className="w-full h-18 pb-1 bg-white fixed font-Cormorant border-b border-gray-300 || dark:bg-black/90 dark:md:bg-black/80 dark:border-gray-800">
+    <div className="w-full h-18 pb-1 bg-white fixed font-Cormorant border-b border-gray-300 || dark:bg-black/90 dark:md:bg-black/80 dark:border-gray-800 z-50">
       <div className='flex justify-between py-2 px-4 md:px-8'>
         <div>
           {/* <span onClick={homeLink}>
