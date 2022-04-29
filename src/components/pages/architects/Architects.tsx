@@ -9,7 +9,7 @@ import _ from 'lodash'
 export const Architects = () => {
   let init = 0
   let end = 44
-  const { isLoading, error, data } = useQuery('users', () => {
+  const { isLoading, data } = useQuery('users', () => {
     return axios.get(import.meta.env.VITE_USER_API).then(response => response.data)
   })
   if (isLoading) return <div>Loading...</div>
