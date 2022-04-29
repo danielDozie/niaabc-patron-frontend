@@ -9,6 +9,7 @@ import { Architects } from './components/pages/architects/Architects';
 import { ThemeProvider } from './components/theme/Theme';
 const queryClient = new QueryClient();
 
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
